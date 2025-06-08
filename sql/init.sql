@@ -3,7 +3,7 @@ FROM
       top_br_youtubers_2024;
 
 BULK INSERT top_br_youtubers_2024
-FROM 'updated_youtube_data_BR.csv'
+FROM 'C:\Users\rayan\OneDrive\Área de Trabalho\dataSocial\updated_youtube_data_BR.csv'
 WITH (
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',

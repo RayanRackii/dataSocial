@@ -33,14 +33,14 @@ def get_channel_stats(youtube, channel_id):
         print(f"Canal não encontrado para ID: {channel_id}")
         data = dict(
                 channel_name='Deleted channel',
-                total_subscribers=0,
-                total_views=0,
-                total_videos=0
+                total_subscribers=1,
+                total_views=1,
+                total_videos=1
         )
         return data
 
 # Read CSV into dataframe 
-csv_path = os.path.join(os.path.dirname(__file__), "youtube_data_brazil.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "assets/datasets/youtube_data_brazil.csv")
 df = pd.read_csv(csv_path, encoding='utf-8', sep=';')
 
 # Extract channel IDs and remove potential duplicates
